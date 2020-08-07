@@ -53,12 +53,11 @@ public class Principal extends javax.swing.JFrame {
         tres = new rsbuttom.RSButtonMetro();
         dos = new rsbuttom.RSButtonMetro();
         cinco = new rsbuttom.RSButtonMetro();
-        jPanel5 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
         ocho = new rsbuttom.RSButtonMetro();
         siete = new rsbuttom.RSButtonMetro();
         seis = new rsbuttom.RSButtonMetro();
         cuatro = new rsbuttom.RSButtonMetro();
+        jLabel3 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         pnlCentro = new javax.swing.JPanel();
@@ -105,7 +104,7 @@ public class Principal extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(247, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -171,30 +170,6 @@ public class Principal extends javax.swing.JFrame {
                 cincoActionPerformed(evt);
             }
         });
-
-        jPanel5.setBackground(new java.awt.Color(51, 109, 136));
-        jPanel5.setForeground(new java.awt.Color(255, 255, 255));
-
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("CONFIGURACIONES");
-
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel3)
-                .addContainerGap(107, Short.MAX_VALUE))
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                .addContainerGap(23, Short.MAX_VALUE)
-                .addComponent(jLabel3)
-                .addContainerGap())
-        );
 
         ocho.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/web.png"))); // NOI18N
         ocho.setText("Web");
@@ -275,28 +250,32 @@ public class Principal extends javax.swing.JFrame {
             }
         });
 
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("CONFIGURACIONES");
+
         javax.swing.GroupLayout pnlMenuLayout = new javax.swing.GroupLayout(pnlMenu);
         pnlMenu.setLayout(pnlMenuLayout);
         pnlMenuLayout.setHorizontalGroup(
             pnlMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlMenuLayout.createSequentialGroup()
                 .addGroup(pnlMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlMenuLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel3))
+                    .addComponent(cinco, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cuatro, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tres, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(dos, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pnlMenuLayout.createSequentialGroup()
+                .addGroup(pnlMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(seis, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(siete, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ocho, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 714, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlMenuLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlMenuLayout.createSequentialGroup()
-                .addGroup(pnlMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(dos, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(uno, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(tres, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(cuatro, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(cinco, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
+                    .addComponent(ocho, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(uno, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         pnlMenuLayout.setVerticalGroup(
             pnlMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -310,12 +289,11 @@ public class Principal extends javax.swing.JFrame {
                 .addComponent(tres, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
                 .addComponent(cuatro, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(pnlMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnlMenuLayout.createSequentialGroup()
-                        .addGap(44, 44, 44)
-                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(cinco, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(4, 4, 4)
+                .addGap(0, 0, 0)
+                .addComponent(cinco, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel3)
+                .addGap(16, 16, 16)
                 .addComponent(seis, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
                 .addComponent(siete, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -357,7 +335,7 @@ public class Principal extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 432, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(535, Short.MAX_VALUE))
+                .addContainerGap(1028, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -390,11 +368,13 @@ public class Principal extends javax.swing.JFrame {
         pnlCentro.setLayout(pnlCentroLayout);
         pnlCentroLayout.setHorizontalGroup(
             pnlCentroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 977, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1164, Short.MAX_VALUE)
         );
         pnlCentroLayout.setVerticalGroup(
             pnlCentroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 608, Short.MAX_VALUE)
+            .addGroup(pnlCentroLayout.createSequentialGroup()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 878, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -420,265 +400,114 @@ public class Principal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void unoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_unoActionPerformed
-        new CambiaPanel(pnlPrincipal, new paneles.pnlHome());
-        if(this.uno.isSelected()){
-            this.uno.setColorNormal(new Color(49,143,181));
+    private void jPanel2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MousePressed
+        x = evt.getX();
+        y = evt.getY();
+    }//GEN-LAST:event_jPanel2MousePressed
+
+    private void jPanel2MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MouseDragged
+        Point mueve = MouseInfo.getPointerInfo().getLocation();
+        this.setLocation(mueve.x - x, mueve.y - y);
+    }//GEN-LAST:event_jPanel2MouseDragged
+
+    private void cuatroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cuatroActionPerformed
+        new CambiaPanel(pnlPrincipal, new paneles.Medicinas());
+
+        if(this.cuatro.isSelected()){
+            this.uno.setColorNormal(new Color(51,109,136));
             this.uno.setColorHover(new Color(49,143,181));
             this.uno.setColorPressed(new Color(29,9,33));
-            
+
             this.dos.setColorNormal(new Color(51,109,136));
             this.dos.setColorHover(new Color(49,143,181));
             this.dos.setColorPressed(new Color(29,9,33));
-            
+
             this.tres.setColorNormal(new Color(51,109,136));
             this.tres.setColorHover(new Color(49,143,181));
             this.tres.setColorPressed(new Color(29,9,33));
-            
-            this.cuatro.setColorNormal(new Color(51,109,136));
+
+            this.cuatro.setColorNormal(new Color(49,143,181));
             this.cuatro.setColorHover(new Color(49,143,181));
             this.cuatro.setColorPressed(new Color(29,9,33));
-            
+
             this.cinco.setColorNormal(new Color(51,109,136));
             this.cinco.setColorHover(new Color(49,143,181));
             this.cinco.setColorPressed(new Color(29,9,33));
-            
+
             this.seis.setColorNormal(new Color(51,109,136));
             this.seis.setColorHover(new Color(49,143,181));
             this.seis.setColorPressed(new Color(29,9,33));
-            
+
             this.siete.setColorNormal(new Color(51,109,136));
             this.siete.setColorHover(new Color(49,143,181));
             this.siete.setColorPressed(new Color(29,9,33));
-            
+
             this.ocho.setColorNormal(new Color(51,109,136));
             this.ocho.setColorHover(new Color(49,143,181));
             this.ocho.setColorPressed(new Color(29,9,33));
         }else{
-            this.uno.setColorNormal(new Color(51,109,136));
-            this.uno.setColorHover(new Color(49,143,181));
-            this.uno.setColorPressed(new Color(29,9,33));
+            this.cuatro.setColorNormal(new Color(51,109,136));
+            this.cuatro.setColorHover(new Color(49,143,181));
+            this.cuatro.setColorPressed(new Color(29,9,33));
         }
-    }//GEN-LAST:event_unoActionPerformed
+    }//GEN-LAST:event_cuatroActionPerformed
 
-    private void unoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unoMousePressed
-        this.uno.setSelected(true);
+    private void cuatroMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cuatroMousePressed
+        this.uno.setSelected(false);
         this.dos.setSelected(false);
         this.tres.setSelected(false);
-        this.cuatro.setSelected(false);
+        this.cuatro.setSelected(true);
         this.cinco.setSelected(false);
         this.seis.setSelected(false);
         this.siete.setSelected(false);
         this.ocho.setSelected(false);
-    }//GEN-LAST:event_unoMousePressed
+    }//GEN-LAST:event_cuatroMousePressed
 
-    private void tresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tresActionPerformed
-        new CambiaPanel(pnlPrincipal, new paneles.pnlChat());
-        if(this.tres.isSelected()){
-            this.tres.setColorNormal(new Color(49,143,181));
-            this.tres.setColorHover(new Color(49,143,181));
-            this.tres.setColorPressed(new Color(29,9,33));
-            
+    private void cuatroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cuatroMouseClicked
+        /*pnlMedicinas x = new pnlMedicinas();
+        x.setVisible(true);*/
+    }//GEN-LAST:event_cuatroMouseClicked
+
+    private void seisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seisActionPerformed
+        //   new CambiaPanel(pnlPrincipal, new paneles.pnlAndroid());
+        if(this.seis.isSelected()){
             this.uno.setColorNormal(new Color(51,109,136));
             this.uno.setColorHover(new Color(49,143,181));
             this.uno.setColorPressed(new Color(29,9,33));
-            
+
             this.dos.setColorNormal(new Color(51,109,136));
             this.dos.setColorHover(new Color(49,143,181));
             this.dos.setColorPressed(new Color(29,9,33));
-            
+
+            this.tres.setColorNormal(new Color(51,109,136));
+            this.tres.setColorHover(new Color(49,143,181));
+            this.tres.setColorPressed(new Color(29,9,33));
+
             this.cuatro.setColorNormal(new Color(51,109,136));
             this.cuatro.setColorHover(new Color(49,143,181));
             this.cuatro.setColorPressed(new Color(29,9,33));
-            
+
             this.cinco.setColorNormal(new Color(51,109,136));
             this.cinco.setColorHover(new Color(49,143,181));
             this.cinco.setColorPressed(new Color(29,9,33));
-            
-            this.seis.setColorNormal(new Color(51,109,136));
+
+            this.seis.setColorNormal(new Color(49,143,181));
             this.seis.setColorHover(new Color(49,143,181));
             this.seis.setColorPressed(new Color(29,9,33));
-            
+
             this.siete.setColorNormal(new Color(51,109,136));
             this.siete.setColorHover(new Color(49,143,181));
             this.siete.setColorPressed(new Color(29,9,33));
-            
+
             this.ocho.setColorNormal(new Color(51,109,136));
             this.ocho.setColorHover(new Color(49,143,181));
             this.ocho.setColorPressed(new Color(29,9,33));
         }else{
-            this.tres.setColorNormal(new Color(51,109,136));
-            this.tres.setColorHover(new Color(49,143,181));
-            this.tres.setColorPressed(new Color(29,9,33));
-        }
-    }//GEN-LAST:event_tresActionPerformed
-
-    private void tresMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tresMousePressed
-        this.uno.setSelected(false);
-        this.dos.setSelected(false);
-        this.tres.setSelected(true);
-        this.cuatro.setSelected(false);
-        this.cinco.setSelected(false);
-        this.seis.setSelected(false);
-        this.siete.setSelected(false);
-        this.ocho.setSelected(false);
-    }//GEN-LAST:event_tresMousePressed
-
-    private void dosMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dosMousePressed
-        this.uno.setSelected(false);
-        this.dos.setSelected(true);
-        this.tres.setSelected(false);
-        this.cuatro.setSelected(false);
-        this.cinco.setSelected(false);
-        this.seis.setSelected(false);
-        this.siete.setSelected(false);
-        this.ocho.setSelected(false);
-    }//GEN-LAST:event_dosMousePressed
-
-    private void dosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dosActionPerformed
-        new CambiaPanel(pnlPrincipal, new paneles.pnlCollection());
-        if(this.dos.isSelected()){
-            this.dos.setColorNormal(new Color(49,143,181));
-            this.dos.setColorHover(new Color(49,143,181));
-            this.dos.setColorPressed(new Color(29,9,33));
-            
-            this.uno.setColorNormal(new Color(51,109,136));
-            this.uno.setColorHover(new Color(49,143,181));
-            this.uno.setColorPressed(new Color(29,9,33));
-            
-            this.tres.setColorNormal(new Color(51,109,136));
-            this.tres.setColorHover(new Color(49,143,181));
-            this.tres.setColorPressed(new Color(29,9,33));
-            
-            this.cuatro.setColorNormal(new Color(51,109,136));
-            this.cuatro.setColorHover(new Color(49,143,181));
-            this.cuatro.setColorPressed(new Color(29,9,33));
-            
-            this.cinco.setColorNormal(new Color(51,109,136));
-            this.cinco.setColorHover(new Color(49,143,181));
-            this.cinco.setColorPressed(new Color(29,9,33));
-            
             this.seis.setColorNormal(new Color(51,109,136));
             this.seis.setColorHover(new Color(49,143,181));
             this.seis.setColorPressed(new Color(29,9,33));
-            
-            this.siete.setColorNormal(new Color(51,109,136));
-            this.siete.setColorHover(new Color(49,143,181));
-            this.siete.setColorPressed(new Color(29,9,33));
-            
-            this.ocho.setColorNormal(new Color(51,109,136));
-            this.ocho.setColorHover(new Color(49,143,181));
-            this.ocho.setColorPressed(new Color(29,9,33));
-        }else{
-            this.dos.setColorNormal(new Color(51,109,136));
-            this.dos.setColorHover(new Color(49,143,181));
-            this.dos.setColorPressed(new Color(29,9,33));
         }
-    }//GEN-LAST:event_dosActionPerformed
-
-    private void ochoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ochoMousePressed
-        this.uno.setSelected(false);
-        this.dos.setSelected(false);
-        this.tres.setSelected(false);
-        this.cuatro.setSelected(false);
-        this.cinco.setSelected(false);
-        this.seis.setSelected(false);
-        this.siete.setSelected(false);
-        this.ocho.setSelected(true);
-    }//GEN-LAST:event_ochoMousePressed
-
-    private void ochoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ochoActionPerformed
-        new CambiaPanel(pnlPrincipal, new paneles.pnlWeb());
-        if(this.ocho.isSelected()){
-            this.uno.setColorNormal(new Color(51,109,136));
-            this.uno.setColorHover(new Color(49,143,181));
-            this.uno.setColorPressed(new Color(29,9,33));
-            
-            this.dos.setColorNormal(new Color(51,109,136));
-            this.dos.setColorHover(new Color(49,143,181));
-            this.dos.setColorPressed(new Color(29,9,33));
-            
-            this.tres.setColorNormal(new Color(51,109,136));
-            this.tres.setColorHover(new Color(49,143,181));
-            this.tres.setColorPressed(new Color(29,9,33));
-            
-            this.cuatro.setColorNormal(new Color(51,109,136));
-            this.cuatro.setColorHover(new Color(49,143,181));
-            this.cuatro.setColorPressed(new Color(29,9,33));
-            
-            this.cinco.setColorNormal(new Color(51,109,136));
-            this.cinco.setColorHover(new Color(49,143,181));
-            this.cinco.setColorPressed(new Color(29,9,33));
-            
-            this.seis.setColorNormal(new Color(51,109,136));
-            this.seis.setColorHover(new Color(49,143,181));
-            this.seis.setColorPressed(new Color(29,9,33));
-            
-            this.siete.setColorNormal(new Color(51,109,136));
-            this.siete.setColorHover(new Color(49,143,181));
-            this.siete.setColorPressed(new Color(29,9,33));
-            
-            this.ocho.setColorNormal(new Color(49,143,181));
-            this.ocho.setColorHover(new Color(49,143,181));
-            this.ocho.setColorPressed(new Color(29,9,33));
-        }else{
-            this.ocho.setColorNormal(new Color(51,109,136));
-            this.ocho.setColorHover(new Color(49,143,181));
-            this.ocho.setColorPressed(new Color(29,9,33));
-        }
-    }//GEN-LAST:event_ochoActionPerformed
-
-    private void sieteMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sieteMousePressed
-        this.uno.setSelected(false);
-        this.dos.setSelected(false);
-        this.tres.setSelected(false);
-        this.cuatro.setSelected(false);
-        this.cinco.setSelected(false);
-        this.seis.setSelected(false);
-        this.siete.setSelected(true);
-        this.ocho.setSelected(false);
-    }//GEN-LAST:event_sieteMousePressed
-
-    private void sieteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sieteActionPerformed
-        new CambiaPanel(pnlPrincipal, new paneles.pnlIOS());
-        if(this.siete.isSelected()){
-            this.uno.setColorNormal(new Color(51,109,136));
-            this.uno.setColorHover(new Color(49,143,181));
-            this.uno.setColorPressed(new Color(29,9,33));
-            
-            this.dos.setColorNormal(new Color(51,109,136));
-            this.dos.setColorHover(new Color(49,143,181));
-            this.dos.setColorPressed(new Color(29,9,33));
-            
-            this.tres.setColorNormal(new Color(51,109,136));
-            this.tres.setColorHover(new Color(49,143,181));
-            this.tres.setColorPressed(new Color(29,9,33));
-            
-            this.cuatro.setColorNormal(new Color(51,109,136));
-            this.cuatro.setColorHover(new Color(49,143,181));
-            this.cuatro.setColorPressed(new Color(29,9,33));
-            
-            this.cinco.setColorNormal(new Color(51,109,136));
-            this.cinco.setColorHover(new Color(49,143,181));
-            this.cinco.setColorPressed(new Color(29,9,33));
-            
-            this.seis.setColorNormal(new Color(51,109,136));
-            this.seis.setColorHover(new Color(49,143,181));
-            this.seis.setColorPressed(new Color(29,9,33));
-            
-            this.siete.setColorNormal(new Color(49,143,181));
-            this.siete.setColorHover(new Color(49,143,181));
-            this.siete.setColorPressed(new Color(29,9,33));
-            
-            this.ocho.setColorNormal(new Color(51,109,136));
-            this.ocho.setColorHover(new Color(49,143,181));
-            this.ocho.setColorPressed(new Color(29,9,33));
-        }else{
-            this.siete.setColorNormal(new Color(51,109,136));
-            this.siete.setColorHover(new Color(49,143,181));
-            this.siete.setColorPressed(new Color(29,9,33));
-        }
-    }//GEN-LAST:event_sieteActionPerformed
+    }//GEN-LAST:event_seisActionPerformed
 
     private void seisMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seisMousePressed
         this.uno.setSelected(false);
@@ -691,78 +520,141 @@ public class Principal extends javax.swing.JFrame {
         this.ocho.setSelected(false);
     }//GEN-LAST:event_seisMousePressed
 
-    private void seisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seisActionPerformed
-        new CambiaPanel(pnlPrincipal, new paneles.pnlAndroid());
-        if(this.seis.isSelected()){
+    private void sieteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sieteActionPerformed
+        //new CambiaPanel(pnlPrincipal, new paneles.pnlIOS());
+        if(this.siete.isSelected()){
             this.uno.setColorNormal(new Color(51,109,136));
             this.uno.setColorHover(new Color(49,143,181));
             this.uno.setColorPressed(new Color(29,9,33));
-            
+
             this.dos.setColorNormal(new Color(51,109,136));
             this.dos.setColorHover(new Color(49,143,181));
             this.dos.setColorPressed(new Color(29,9,33));
-            
+
             this.tres.setColorNormal(new Color(51,109,136));
             this.tres.setColorHover(new Color(49,143,181));
             this.tres.setColorPressed(new Color(29,9,33));
-            
+
             this.cuatro.setColorNormal(new Color(51,109,136));
             this.cuatro.setColorHover(new Color(49,143,181));
             this.cuatro.setColorPressed(new Color(29,9,33));
-            
+
             this.cinco.setColorNormal(new Color(51,109,136));
             this.cinco.setColorHover(new Color(49,143,181));
             this.cinco.setColorPressed(new Color(29,9,33));
-            
-            this.seis.setColorNormal(new Color(49,143,181));
+
+            this.seis.setColorNormal(new Color(51,109,136));
             this.seis.setColorHover(new Color(49,143,181));
             this.seis.setColorPressed(new Color(29,9,33));
-            
-            this.siete.setColorNormal(new Color(51,109,136));
+
+            this.siete.setColorNormal(new Color(49,143,181));
             this.siete.setColorHover(new Color(49,143,181));
             this.siete.setColorPressed(new Color(29,9,33));
-            
+
             this.ocho.setColorNormal(new Color(51,109,136));
             this.ocho.setColorHover(new Color(49,143,181));
             this.ocho.setColorPressed(new Color(29,9,33));
         }else{
+            this.siete.setColorNormal(new Color(51,109,136));
+            this.siete.setColorHover(new Color(49,143,181));
+            this.siete.setColorPressed(new Color(29,9,33));
+        }
+    }//GEN-LAST:event_sieteActionPerformed
+
+    private void sieteMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sieteMousePressed
+        this.uno.setSelected(false);
+        this.dos.setSelected(false);
+        this.tres.setSelected(false);
+        this.cuatro.setSelected(false);
+        this.cinco.setSelected(false);
+        this.seis.setSelected(false);
+        this.siete.setSelected(true);
+        this.ocho.setSelected(false);
+    }//GEN-LAST:event_sieteMousePressed
+
+    private void ochoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ochoActionPerformed
+        // new CambiaPanel(pnlPrincipal, new paneles.pnlWeb());
+        if(this.ocho.isSelected()){
+            this.uno.setColorNormal(new Color(51,109,136));
+            this.uno.setColorHover(new Color(49,143,181));
+            this.uno.setColorPressed(new Color(29,9,33));
+
+            this.dos.setColorNormal(new Color(51,109,136));
+            this.dos.setColorHover(new Color(49,143,181));
+            this.dos.setColorPressed(new Color(29,9,33));
+
+            this.tres.setColorNormal(new Color(51,109,136));
+            this.tres.setColorHover(new Color(49,143,181));
+            this.tres.setColorPressed(new Color(29,9,33));
+
+            this.cuatro.setColorNormal(new Color(51,109,136));
+            this.cuatro.setColorHover(new Color(49,143,181));
+            this.cuatro.setColorPressed(new Color(29,9,33));
+
+            this.cinco.setColorNormal(new Color(51,109,136));
+            this.cinco.setColorHover(new Color(49,143,181));
+            this.cinco.setColorPressed(new Color(29,9,33));
+
             this.seis.setColorNormal(new Color(51,109,136));
             this.seis.setColorHover(new Color(49,143,181));
             this.seis.setColorPressed(new Color(29,9,33));
+
+            this.siete.setColorNormal(new Color(51,109,136));
+            this.siete.setColorHover(new Color(49,143,181));
+            this.siete.setColorPressed(new Color(29,9,33));
+
+            this.ocho.setColorNormal(new Color(49,143,181));
+            this.ocho.setColorHover(new Color(49,143,181));
+            this.ocho.setColorPressed(new Color(29,9,33));
+        }else{
+            this.ocho.setColorNormal(new Color(51,109,136));
+            this.ocho.setColorHover(new Color(49,143,181));
+            this.ocho.setColorPressed(new Color(29,9,33));
         }
-    }//GEN-LAST:event_seisActionPerformed
+    }//GEN-LAST:event_ochoActionPerformed
+
+    private void ochoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ochoMousePressed
+        this.uno.setSelected(false);
+        this.dos.setSelected(false);
+        this.tres.setSelected(false);
+        this.cuatro.setSelected(false);
+        this.cinco.setSelected(false);
+        this.seis.setSelected(false);
+        this.siete.setSelected(false);
+        this.ocho.setSelected(true);
+    }//GEN-LAST:event_ochoMousePressed
 
     private void cincoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cincoActionPerformed
-        new CambiaPanel(pnlPrincipal, new paneles.pnlMarket());
+        new CambiaPanel(pnlPrincipal, new paneles.pnlDoctores());
         if(this.cinco.isSelected()){
             this.uno.setColorNormal(new Color(51,109,136));
             this.uno.setColorHover(new Color(49,143,181));
             this.uno.setColorPressed(new Color(29,9,33));
-            
+
             this.dos.setColorNormal(new Color(51,109,136));
             this.dos.setColorHover(new Color(49,143,181));
             this.dos.setColorPressed(new Color(29,9,33));
-            
+
             this.tres.setColorNormal(new Color(51,109,136));
             this.tres.setColorHover(new Color(49,143,181));
             this.tres.setColorPressed(new Color(29,9,33));
-            
+
             this.cuatro.setColorNormal(new Color(51,109,136));
             this.cuatro.setColorHover(new Color(49,143,181));
             this.cuatro.setColorPressed(new Color(29,9,33));
-            
+
             this.cinco.setColorNormal(new Color(49,143,181));
             this.cinco.setColorHover(new Color(49,143,181));
             this.cinco.setColorPressed(new Color(29,9,33));
-            
+
             this.seis.setColorNormal(new Color(51,109,136));
             this.seis.setColorHover(new Color(49,143,181));
             this.seis.setColorPressed(new Color(29,9,33));
-            
+
             this.siete.setColorNormal(new Color(51,109,136));
             this.siete.setColorHover(new Color(49,143,181));
             this.siete.setColorPressed(new Color(29,9,33));
-            
+
             this.ocho.setColorNormal(new Color(51,109,136));
             this.ocho.setColorHover(new Color(49,143,181));
             this.ocho.setColorPressed(new Color(29,9,33));
@@ -784,74 +676,161 @@ public class Principal extends javax.swing.JFrame {
         this.ocho.setSelected(false);
     }//GEN-LAST:event_cincoMousePressed
 
-    private void cuatroMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cuatroMousePressed
-        this.uno.setSelected(false);
-        this.dos.setSelected(false);
-        this.tres.setSelected(false);
-        this.cuatro.setSelected(true);
-        this.cinco.setSelected(false);
-        this.seis.setSelected(false);
-        this.siete.setSelected(false);
-        this.ocho.setSelected(false);
-    }//GEN-LAST:event_cuatroMousePressed
+    private void dosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dosActionPerformed
+        //  new CambiaPanel(pnlPrincipal, new paneles.pnlCollection());
+        if(this.dos.isSelected()){
+            this.dos.setColorNormal(new Color(49,143,181));
+            this.dos.setColorHover(new Color(49,143,181));
+            this.dos.setColorPressed(new Color(29,9,33));
 
-    private void cuatroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cuatroActionPerformed
-        new CambiaPanel(pnlPrincipal, new paneles.Medicinas());
-        
-        if(this.cuatro.isSelected()){
             this.uno.setColorNormal(new Color(51,109,136));
             this.uno.setColorHover(new Color(49,143,181));
             this.uno.setColorPressed(new Color(29,9,33));
-            
-            this.dos.setColorNormal(new Color(51,109,136));
-            this.dos.setColorHover(new Color(49,143,181));
-            this.dos.setColorPressed(new Color(29,9,33));
-            
+
             this.tres.setColorNormal(new Color(51,109,136));
             this.tres.setColorHover(new Color(49,143,181));
             this.tres.setColorPressed(new Color(29,9,33));
-            
-            this.cuatro.setColorNormal(new Color(49,143,181));
+
+            this.cuatro.setColorNormal(new Color(51,109,136));
             this.cuatro.setColorHover(new Color(49,143,181));
             this.cuatro.setColorPressed(new Color(29,9,33));
-            
+
             this.cinco.setColorNormal(new Color(51,109,136));
             this.cinco.setColorHover(new Color(49,143,181));
             this.cinco.setColorPressed(new Color(29,9,33));
-            
+
             this.seis.setColorNormal(new Color(51,109,136));
             this.seis.setColorHover(new Color(49,143,181));
             this.seis.setColorPressed(new Color(29,9,33));
-            
+
             this.siete.setColorNormal(new Color(51,109,136));
             this.siete.setColorHover(new Color(49,143,181));
             this.siete.setColorPressed(new Color(29,9,33));
-            
+
             this.ocho.setColorNormal(new Color(51,109,136));
             this.ocho.setColorHover(new Color(49,143,181));
             this.ocho.setColorPressed(new Color(29,9,33));
         }else{
+            this.dos.setColorNormal(new Color(51,109,136));
+            this.dos.setColorHover(new Color(49,143,181));
+            this.dos.setColorPressed(new Color(29,9,33));
+        }
+    }//GEN-LAST:event_dosActionPerformed
+
+    private void dosMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dosMousePressed
+        this.uno.setSelected(false);
+        this.dos.setSelected(true);
+        this.tres.setSelected(false);
+        this.cuatro.setSelected(false);
+        this.cinco.setSelected(false);
+        this.seis.setSelected(false);
+        this.siete.setSelected(false);
+        this.ocho.setSelected(false);
+    }//GEN-LAST:event_dosMousePressed
+
+    private void tresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tresActionPerformed
+          new CambiaPanel(pnlPrincipal, new paneles.pnlConsulta());
+        if(this.tres.isSelected()){
+            this.tres.setColorNormal(new Color(49,143,181));
+            this.tres.setColorHover(new Color(49,143,181));
+            this.tres.setColorPressed(new Color(29,9,33));
+
+            this.uno.setColorNormal(new Color(51,109,136));
+            this.uno.setColorHover(new Color(49,143,181));
+            this.uno.setColorPressed(new Color(29,9,33));
+
+            this.dos.setColorNormal(new Color(51,109,136));
+            this.dos.setColorHover(new Color(49,143,181));
+            this.dos.setColorPressed(new Color(29,9,33));
+
             this.cuatro.setColorNormal(new Color(51,109,136));
             this.cuatro.setColorHover(new Color(49,143,181));
             this.cuatro.setColorPressed(new Color(29,9,33));
+
+            this.cinco.setColorNormal(new Color(51,109,136));
+            this.cinco.setColorHover(new Color(49,143,181));
+            this.cinco.setColorPressed(new Color(29,9,33));
+
+            this.seis.setColorNormal(new Color(51,109,136));
+            this.seis.setColorHover(new Color(49,143,181));
+            this.seis.setColorPressed(new Color(29,9,33));
+
+            this.siete.setColorNormal(new Color(51,109,136));
+            this.siete.setColorHover(new Color(49,143,181));
+            this.siete.setColorPressed(new Color(29,9,33));
+
+            this.ocho.setColorNormal(new Color(51,109,136));
+            this.ocho.setColorHover(new Color(49,143,181));
+            this.ocho.setColorPressed(new Color(29,9,33));
+        }else{
+            this.tres.setColorNormal(new Color(51,109,136));
+            this.tres.setColorHover(new Color(49,143,181));
+            this.tres.setColorPressed(new Color(29,9,33));
         }
-    }//GEN-LAST:event_cuatroActionPerformed
+    }//GEN-LAST:event_tresActionPerformed
 
-    private void jPanel2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MousePressed
-        x = evt.getX();
-        y = evt.getY();
-    }//GEN-LAST:event_jPanel2MousePressed
+    private void tresMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tresMousePressed
+        this.uno.setSelected(false);
+        this.dos.setSelected(false);
+        this.tres.setSelected(true);
+        this.cuatro.setSelected(false);
+        this.cinco.setSelected(false);
+        this.seis.setSelected(false);
+        this.siete.setSelected(false);
+        this.ocho.setSelected(false);
+    }//GEN-LAST:event_tresMousePressed
 
-    private void jPanel2MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MouseDragged
-        Point mueve = MouseInfo.getPointerInfo().getLocation();
-        this.setLocation(mueve.x - x, mueve.y - y);
-    }//GEN-LAST:event_jPanel2MouseDragged
+    private void unoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_unoActionPerformed
+        new CambiaPanel(pnlPrincipal, new paneles.pnlHome());
+        if(this.uno.isSelected()){
+            this.uno.setColorNormal(new Color(49,143,181));
+            this.uno.setColorHover(new Color(49,143,181));
+            this.uno.setColorPressed(new Color(29,9,33));
 
-    private void cuatroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cuatroMouseClicked
-        /*pnlMedicinas x = new pnlMedicinas();
-        x.setVisible(true);*/
-        
-    }//GEN-LAST:event_cuatroMouseClicked
+            this.dos.setColorNormal(new Color(51,109,136));
+            this.dos.setColorHover(new Color(49,143,181));
+            this.dos.setColorPressed(new Color(29,9,33));
+
+            this.tres.setColorNormal(new Color(51,109,136));
+            this.tres.setColorHover(new Color(49,143,181));
+            this.tres.setColorPressed(new Color(29,9,33));
+
+            this.cuatro.setColorNormal(new Color(51,109,136));
+            this.cuatro.setColorHover(new Color(49,143,181));
+            this.cuatro.setColorPressed(new Color(29,9,33));
+
+            this.cinco.setColorNormal(new Color(51,109,136));
+            this.cinco.setColorHover(new Color(49,143,181));
+            this.cinco.setColorPressed(new Color(29,9,33));
+
+            this.seis.setColorNormal(new Color(51,109,136));
+            this.seis.setColorHover(new Color(49,143,181));
+            this.seis.setColorPressed(new Color(29,9,33));
+
+            this.siete.setColorNormal(new Color(51,109,136));
+            this.siete.setColorHover(new Color(49,143,181));
+            this.siete.setColorPressed(new Color(29,9,33));
+
+            this.ocho.setColorNormal(new Color(51,109,136));
+            this.ocho.setColorHover(new Color(49,143,181));
+            this.ocho.setColorPressed(new Color(29,9,33));
+        }else{
+            this.uno.setColorNormal(new Color(51,109,136));
+            this.uno.setColorHover(new Color(49,143,181));
+            this.uno.setColorPressed(new Color(29,9,33));
+        }
+    }//GEN-LAST:event_unoActionPerformed
+
+    private void unoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_unoMousePressed
+        this.uno.setSelected(true);
+        this.dos.setSelected(false);
+        this.tres.setSelected(false);
+        this.cuatro.setSelected(false);
+        this.cinco.setSelected(false);
+        this.seis.setSelected(false);
+        this.siete.setSelected(false);
+        this.ocho.setSelected(false);
+    }//GEN-LAST:event_unoMousePressed
 
     /**
      * @param args the command line arguments
@@ -903,7 +882,6 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
     private rsbuttom.RSButtonMetro ocho;
     private javax.swing.JPanel pnlCentro;
