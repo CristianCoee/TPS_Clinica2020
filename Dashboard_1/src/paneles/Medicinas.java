@@ -18,6 +18,7 @@ public class Medicinas extends javax.swing.JPanel {
      */
     public Medicinas() {
         initComponents();
+        
         TextPrompt FiltroTodas = new TextPrompt("Nombre de medicina", this.txtFiltroMed);
         TextPrompt FiltroNuevo = new TextPrompt("Nombre de medicina", this.txtFiltroN);
         TextPrompt Nombre = new TextPrompt("Nombre de medicina", this.txtNombre);
